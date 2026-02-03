@@ -34,13 +34,37 @@ if test "$ZEN_RELEASE"; then
     ac_add_options --enable-linker=lld
     ac_add_options --disable-elf-hack
     ac_add_options --disable-necko-wifi
-
-    # Stripping options for release builds
-    ac_add_options --enable-install-strip
-    ac_add_options --enable-strip
-    export STRIP_FLAGS="--strip-debug --strip-unneeded"
 fi
 
 # Common options
 ac_add_options --enable-alsa
 ac_add_options --enable-pulseaudio
+
+# Basic path definitions.
+ac_add_options --prefix=/usr
+ac_add_options --libdir=/usr/lib
+
+# Toolchain settings.
+ac_add_options --disable-strip
+ac_add_options --disable-install-strip
+ac_add_options --enable-hardening
+
+# Optimize
+ac_add_options --enable-optimize="-O2"
+
+# Dependencies.
+ac_add_options --enable-system-ffi
+ac_add_options --without-system-jpeg
+ac_add_options --with-system-libevent
+ac_add_options --with-system-libvpx
+ac_add_options --with-system-nspr
+ac_add_options --with-system-nss
+ac_add_options --with-system-zlib
+ac_add_options --without-system-icu
+
+# Features.
+ac_add_options --enable-chrome-format=omni
+ac_add_options --enable-js-shell
+ac_add_options --enable-av1
+ac_add_options --disable-tests
+ac_add_options --disable-updater

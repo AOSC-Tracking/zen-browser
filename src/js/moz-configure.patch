@@ -1,0 +1,14 @@
+diff --git a/js/moz.configure b/js/moz.configure
+index 765c1de95f38295b4079a3f8b9f85564b16d07e7..d318bd439e2d12daefb62c7f0e452fb14f9a4cc2 100644
+--- a/js/moz.configure
++++ b/js/moz.configure
+@@ -718,7 +718,8 @@ def default_wasm_jspi(
+         "aarch64",
+         "arm",
+         "loongarch64",
+-        "mips64",
++# AOSCOS: Disable JSPI for Fx147 to work around Bug 2010439.
++#       "mips64",
+         "riscv64",
+     ):
+         return True

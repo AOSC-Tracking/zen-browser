@@ -6,9 +6,6 @@
 ac_add_options --with-app-name=${binName}
 ac_add_options --with-app-basename=Zen
 
-# Localization (Must be an absolute path)
-ac_add_options --with-l10n-base="${topsrcdir}/browser/locales"
-
 export MOZ_APP_BASENAME=Zen
 export MOZ_BRANDING_DIRECTORY=${brandingDir}
 export MOZ_OFFICIAL_BRANDING_DIRECTORY=${brandingDir}
@@ -54,7 +51,7 @@ fi
 if test "$ZEN_RELEASE"; then
 
   ac_add_options --enable-clang-plugin
-  ac_add_options --enable-bootstrap=-sccache
+  # ac_add_options --enable-bootstrap=-sccache
 
   ac_add_options --enable-optimize
 
@@ -65,7 +62,6 @@ if test "$ZEN_RELEASE"; then
   ac_add_options --disable-tests
 
   ac_add_options --enable-rust-simd
-  ac_add_options --enable-wasm-simd
 
   ac_add_options --disable-geckodriver
   ac_add_options --disable-rust-tests

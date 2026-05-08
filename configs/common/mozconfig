@@ -6,9 +6,6 @@
 ac_add_options --with-app-name=${binName}
 ac_add_options --with-app-basename=Zen
 
-# Localization (Must be an absolute path)
-ac_add_options --with-l10n-base="${topsrcdir}/browser/locales"
-
 export MOZ_APP_BASENAME=Zen
 export MOZ_BRANDING_DIRECTORY=${brandingDir}
 export MOZ_OFFICIAL_BRANDING_DIRECTORY=${brandingDir}
@@ -51,9 +48,6 @@ if test -f "$HOME/.zen-keys/google_location_service.dat"; then
 fi
 
 if test "$ZEN_RELEASE"; then
-
-  ac_add_options --enable-clang-plugin
-  
   if ! test "$ZEN_DISABLE_BOOTSTRAP"; then
     ac_add_options --enable-bootstrap=-sccache
   fi
@@ -67,17 +61,9 @@ if test "$ZEN_RELEASE"; then
   ac_add_options --disable-tests
 
   ac_add_options --enable-rust-simd
-  ac_add_options --enable-wasm-simd
 
   ac_add_options --disable-geckodriver
   ac_add_options --disable-rust-tests
-
-  if test "$ZEN_DISABLE_LTO"; then
-    ac_add_options --disable-lto
-  else
-    export MOZ_LTO=cross,thin
-    ac_add_options --enable-lto=cross,thin
-  fi
 
   mk_add_options MOZILLA_OFFICIAL=1
   MOZILLA_OFFICIAL=1

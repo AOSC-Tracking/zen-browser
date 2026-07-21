@@ -1,0 +1,13 @@
+diff --git a/third_party/xsimd/include/xsimd/types/xsimd_neon64_register.hpp b/third_party/xsimd/include/xsimd/types/xsimd_neon64_register.hpp
+index 7fa0b2ce574fdcc326e99cd45a2ac6b220f53134..1df2d4abb2bd4529b54c1d90a959b6b9733e81ff 100644
+--- a/third_party/xsimd/include/xsimd/types/xsimd_neon64_register.hpp
++++ b/third_party/xsimd/include/xsimd/types/xsimd_neon64_register.hpp
+@@ -12,7 +12,7 @@
+ #ifndef XSIMD_NEON64_REGISTER_HPP
+ #define XSIMD_NEON64_REGISTER_HPP
+ 
+-#include "xsimd_neon_register.hpp"
++#include "./xsimd_neon_register.hpp"
+ 
+ namespace xsimd
+ {

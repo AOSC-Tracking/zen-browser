@@ -1,0 +1,40 @@
+diff --git a/third_party/xsimd/include/xsimd/types/xsimd_avx_register.hpp b/third_party/xsimd/include/xsimd/types/xsimd_avx_register.hpp
+index 47997ee760d532abc85bde6c6dd2135973668fca..515b60901adffa898005ee8430d0e71a6cf832a8 100644
+--- a/third_party/xsimd/include/xsimd/types/xsimd_avx_register.hpp
++++ b/third_party/xsimd/include/xsimd/types/xsimd_avx_register.hpp
+@@ -13,6 +13,7 @@
+ #define XSIMD_AVX_REGISTER_HPP
+ 
+ #include "./xsimd_common_arch.hpp"
++#include "./xsimd_sse4_2_register.hpp"
+ 
+ namespace xsimd
+ {
+@@ -30,6 +31,18 @@ namespace xsimd
+         static constexpr bool requires_alignment() noexcept { return true; }
+         static constexpr char const* name() noexcept { return "avx"; }
+     };
++
++    /**
++     * @ingroup architectures
++     *
++     * AVX instructions extension for 128 bits registers
++     */
++    struct avx_128 : sse4_2
++    {
++        static constexpr bool supported() noexcept { return XSIMD_WITH_AVX; }
++        static constexpr bool available() noexcept { return true; }
++        static constexpr char const* name() noexcept { return "avx/128"; }
++    };
+ }
+ 
+ #if XSIMD_WITH_AVX
+@@ -58,6 +71,8 @@ namespace xsimd
+         XSIMD_DECLARE_SIMD_REGISTER(long long int, avx, __m256i);
+         XSIMD_DECLARE_SIMD_REGISTER(float, avx, __m256);
+         XSIMD_DECLARE_SIMD_REGISTER(double, avx, __m256d);
++
++        XSIMD_DECLARE_SIMD_REGISTER_ALIAS(avx_128, sse4_2);
+     }
+ }
+ #endif

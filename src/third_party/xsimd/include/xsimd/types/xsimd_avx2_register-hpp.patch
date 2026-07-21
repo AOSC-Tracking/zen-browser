@@ -1,0 +1,31 @@
+diff --git a/third_party/xsimd/include/xsimd/types/xsimd_avx2_register.hpp b/third_party/xsimd/include/xsimd/types/xsimd_avx2_register.hpp
+index a53132b949579aef8b9bc3ed63d06f3516c5cef0..5f393343db5460c7cdb2e97f68ccf044e65c9094 100644
+--- a/third_party/xsimd/include/xsimd/types/xsimd_avx2_register.hpp
++++ b/third_party/xsimd/include/xsimd/types/xsimd_avx2_register.hpp
+@@ -28,6 +28,18 @@ namespace xsimd
+         static constexpr char const* name() noexcept { return "avx2"; }
+     };
+ 
++    /**
++     * @ingroup architectures
++     *
++     * AVX2 instructions extension for 128 bits registers
++     */
++    struct avx2_128 : avx_128
++    {
++        static constexpr bool supported() noexcept { return XSIMD_WITH_AVX2; }
++        static constexpr bool available() noexcept { return true; }
++        static constexpr char const* name() noexcept { return "avx2/128"; }
++    };
++
+ #if XSIMD_WITH_AVX2
+ 
+ #if !XSIMD_WITH_AVX
+@@ -37,6 +49,7 @@ namespace xsimd
+     namespace types
+     {
+         XSIMD_DECLARE_SIMD_REGISTER_ALIAS(avx2, avx);
++        XSIMD_DECLARE_SIMD_REGISTER_ALIAS(avx2_128, avx_128);
+     }
+ #endif
+ }

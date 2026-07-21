@@ -1,0 +1,20 @@
+diff --git a/third_party/xsimd/include/xsimd/config/xsimd_cpu_features_arm.hpp b/third_party/xsimd/include/xsimd/config/xsimd_cpu_features_arm.hpp
+index 3cf62dd374ef6eb110b10be04ee86f39db56b96d..57f1c56e31d43e498d5494d87e373bc48ac5edb2 100644
+--- a/third_party/xsimd/include/xsimd/config/xsimd_cpu_features_arm.hpp
++++ b/third_party/xsimd/include/xsimd/config/xsimd_cpu_features_arm.hpp
+@@ -12,12 +12,12 @@
+ #ifndef XSIMD_CPU_FEATURES_ARM_HPP
+ #define XSIMD_CPU_FEATURES_ARM_HPP
+ 
+-#include <cstddef>
+-#include <cstdint>
+-
+ #include "./xsimd_config.hpp"
+ #include "./xsimd_getauxval.hpp"
+ 
++#include <cstddef>
++#include <cstdint>
++
+ #if XSIMD_TARGET_ARM && XSIMD_HAVE_LINUX_GETAUXVAL
+ // HWCAP_XXX masks to use on getauxval results.
+ // Header does not exists on all architectures and masks are architecture

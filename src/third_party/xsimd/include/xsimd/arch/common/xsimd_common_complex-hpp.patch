@@ -1,0 +1,17 @@
+diff --git a/third_party/xsimd/include/xsimd/arch/common/xsimd_common_complex.hpp b/third_party/xsimd/include/xsimd/arch/common/xsimd_common_complex.hpp
+index 874825182070978fb35eae816ace583bf8daf34f..cb25535e1d42188aebb6ee661278fa99fc068701 100644
+--- a/third_party/xsimd/include/xsimd/arch/common/xsimd_common_complex.hpp
++++ b/third_party/xsimd/include/xsimd/arch/common/xsimd_common_complex.hpp
+@@ -12,10 +12,10 @@
+ #ifndef XSIMD_COMMON_COMPLEX_HPP
+ #define XSIMD_COMMON_COMPLEX_HPP
+ 
+-#include <complex>
+-
+ #include "./xsimd_common_details.hpp"
+ 
++#include <complex>
++
+ namespace xsimd
+ {
+ 

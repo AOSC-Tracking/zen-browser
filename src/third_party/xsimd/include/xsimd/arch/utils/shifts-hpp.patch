@@ -1,0 +1,13 @@
+diff --git a/third_party/xsimd/include/xsimd/arch/utils/shifts.hpp b/third_party/xsimd/include/xsimd/arch/utils/shifts.hpp
+index dec16feff80751cc1b28efac3617ad729cd3841b..719ecfb7a750107e91d80736d792bb25c6ce404f 100644
+--- a/third_party/xsimd/include/xsimd/arch/utils/shifts.hpp
++++ b/third_party/xsimd/include/xsimd/arch/utils/shifts.hpp
+@@ -13,7 +13,7 @@
+ #ifndef XSIMD_UTILS_SHIFTS_HPP
+ #define XSIMD_UTILS_SHIFTS_HPP
+ 
+-#include "../../config/xsimd_inline.hpp"
++#include "../../config/xsimd_macros.hpp"
+ #include "../../types/xsimd_batch.hpp"
+ #include "../../types/xsimd_batch_constant.hpp"
+ #include "../../types/xsimd_traits.hpp"

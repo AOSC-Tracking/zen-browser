@@ -1,0 +1,17 @@
+diff --git a/third_party/xsimd/include/xsimd/types/xsimd_common_arch.hpp b/third_party/xsimd/include/xsimd/types/xsimd_common_arch.hpp
+index a33c868eafc3bae4f82ab55a4d82698c41ded84e..8f92ad4dc7d013058330f22ff8b3ab3ac79b67ed 100644
+--- a/third_party/xsimd/include/xsimd/types/xsimd_common_arch.hpp
++++ b/third_party/xsimd/include/xsimd/types/xsimd_common_arch.hpp
+@@ -12,10 +12,10 @@
+ #ifndef XSIMD_COMMON_ARCH_HPP
+ #define XSIMD_COMMON_ARCH_HPP
+ 
+-#include <cstddef>
+-
+ #include "../config/xsimd_config.hpp"
+ 
++#include <cstddef>
++
+ /**
+  * @defgroup architectures Architecture description
+  * */

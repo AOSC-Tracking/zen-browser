@@ -1,0 +1,25 @@
+diff --git a/third_party/xsimd/include/xsimd/arch/xsimd_scalar.hpp b/third_party/xsimd/include/xsimd/arch/xsimd_scalar.hpp
+index 0b13f06e11d4a97018e4658c07398011b1dba51f..28d0ba21e00149844150e1c7d5272cc219bb0267 100644
+--- a/third_party/xsimd/include/xsimd/arch/xsimd_scalar.hpp
++++ b/third_party/xsimd/include/xsimd/arch/xsimd_scalar.hpp
+@@ -12,6 +12,8 @@
+ #ifndef XSIMD_SCALAR_HPP
+ #define XSIMD_SCALAR_HPP
+ 
++#include "../config/xsimd_macros.hpp"
++
+ #include <cassert>
+ #include <cmath>
+ #include <complex>
+@@ -20,10 +22,8 @@
+ #include <limits>
+ #include <type_traits>
+ 
+-#include "xsimd/config/xsimd_inline.hpp"
+-
+ #ifdef XSIMD_ENABLE_XTL_COMPLEX
+-#include "xtl/xcomplex.hpp"
++#include <xtl/xcomplex.hpp>
+ #endif
+ 
+ #ifdef __APPLE__

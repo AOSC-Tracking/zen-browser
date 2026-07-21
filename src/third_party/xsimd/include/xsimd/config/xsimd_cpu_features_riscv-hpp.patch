@@ -1,0 +1,20 @@
+diff --git a/third_party/xsimd/include/xsimd/config/xsimd_cpu_features_riscv.hpp b/third_party/xsimd/include/xsimd/config/xsimd_cpu_features_riscv.hpp
+index 45475d6cab2c83c3a741c9549821981e18254459..d1d2ba7d66105adc27ef2de86dde8c541054d473 100644
+--- a/third_party/xsimd/include/xsimd/config/xsimd_cpu_features_riscv.hpp
++++ b/third_party/xsimd/include/xsimd/config/xsimd_cpu_features_riscv.hpp
+@@ -12,12 +12,12 @@
+ #ifndef XSIMD_CPU_FEATURES_RISCV_HPP
+ #define XSIMD_CPU_FEATURES_RISCV_HPP
+ 
+-#include <cstddef>
+-#include <cstdint>
+-
+ #include "./xsimd_config.hpp"
+ #include "./xsimd_getauxval.hpp"
+ 
++#include <cstddef>
++#include <cstdint>
++
+ #if XSIMD_TARGET_RISCV && XSIMD_HAVE_LINUX_GETAUXVAL
+ // HWCAP_XXX masks to use on getauxval results.
+ // Header does not exists on all architectures and masks are architecture

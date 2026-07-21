@@ -1,0 +1,61 @@
+diff --git a/third_party/xsimd/include/xsimd/arch/xsimd_isa.hpp b/third_party/xsimd/include/xsimd/arch/xsimd_isa.hpp
+index 1772159a08f3856551c36b7469e3a58976dc2e12..6beaa527309f05cca221daa69384a6b8a38d1c79 100644
+--- a/third_party/xsimd/include/xsimd/arch/xsimd_isa.hpp
++++ b/third_party/xsimd/include/xsimd/arch/xsimd_isa.hpp
+@@ -13,7 +13,6 @@
+ #define XSIMD_ISA_HPP
+ 
+ #include "../config/xsimd_arch.hpp"
+-
+ #include "./xsimd_common_fwd.hpp"
+ 
+ #if XSIMD_WITH_EMULATED
+@@ -50,6 +49,7 @@
+ 
+ #if XSIMD_WITH_AVX
+ #include "./xsimd_avx.hpp"
++#include "./xsimd_avx_128.hpp"
+ #endif
+ 
+ #if XSIMD_WITH_FMA3_AVX
+@@ -62,6 +62,7 @@
+ 
+ #if XSIMD_WITH_AVX2
+ #include "./xsimd_avx2.hpp"
++#include "./xsimd_avx2_128.hpp"
+ #endif
+ 
+ #if XSIMD_WITH_FMA3_AVX2
+@@ -72,6 +73,10 @@
+ #include "./xsimd_avx512f.hpp"
+ #endif
+ 
++#if XSIMD_WITH_AVX512VL
++#include "./xsimd_avx512vl.hpp"
++#endif
++
+ #if XSIMD_WITH_AVX512DQ
+ #include "./xsimd_avx512dq.hpp"
+ #endif
+@@ -88,6 +93,10 @@
+ #include "./xsimd_avx512pf.hpp"
+ #endif
+ 
++#if XSIMD_WITH_AVX512VL
++#include "./xsimd_avx512pf.hpp"
++#endif
++
+ #if XSIMD_WITH_AVX512IFMA
+ #include "./xsimd_avx512ifma.hpp"
+ #endif
+@@ -136,6 +145,10 @@
+ #include "./xsimd_vsx.hpp"
+ #endif
+ 
++#if XSIMD_WITH_VXE
++#include "./xsimd_vxe.hpp"
++#endif
++
+ // Must come last to have access to all conversion specializations.
+ #include "./xsimd_common.hpp"
+ 

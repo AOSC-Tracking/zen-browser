@@ -1,0 +1,16 @@
+diff --git a/third_party/xsimd/include/xsimd/types/xsimd_register.hpp b/third_party/xsimd/include/xsimd/types/xsimd_register.hpp
+index b14962e5bb9c3744e90b3dad30ff39629a9cf472..e4f9b1ddcdad4e3e03ad3efdd87fa690ebcbc5d2 100644
+--- a/third_party/xsimd/include/xsimd/types/xsimd_register.hpp
++++ b/third_party/xsimd/include/xsimd/types/xsimd_register.hpp
+@@ -12,9 +12,9 @@
+ #ifndef XSIMD_REGISTER_HPP
+ #define XSIMD_REGISTER_HPP
+ 
+-#include <type_traits>
++#include "../config/xsimd_macros.hpp"
+ 
+-#include "../config/xsimd_inline.hpp"
++#include <type_traits>
+ 
+ namespace xsimd
+ {

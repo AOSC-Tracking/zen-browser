@@ -1,0 +1,20 @@
+diff --git a/third_party/xsimd/include/xsimd/arch/common/xsimd_common_details.hpp b/third_party/xsimd/include/xsimd/arch/common/xsimd_common_details.hpp
+index cc9ab754c469d14737ba80151cc52db0753b03ab..a99f193191436ea603ced03919c617080b777b4a 100644
+--- a/third_party/xsimd/include/xsimd/arch/common/xsimd_common_details.hpp
++++ b/third_party/xsimd/include/xsimd/arch/common/xsimd_common_details.hpp
+@@ -12,13 +12,13 @@
+ #ifndef XSIMD_COMMON_DETAILS_HPP
+ #define XSIMD_COMMON_DETAILS_HPP
+ 
+-#include <complex>
+-
+ #include "../../math/xsimd_rem_pio2.hpp"
+ #include "../../types/xsimd_common_arch.hpp"
+ #include "../../types/xsimd_utils.hpp"
+ #include "../xsimd_constants.hpp"
+ 
++#include <complex>
++
+ namespace xsimd
+ {
+     // Forward declaration. Should we put them in a separate file?

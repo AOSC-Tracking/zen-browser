@@ -1,0 +1,17 @@
+diff --git a/third_party/xsimd/include/xsimd/arch/xsimd_sse4_2.hpp b/third_party/xsimd/include/xsimd/arch/xsimd_sse4_2.hpp
+index 5265182f9d22797bdf88b4684f1d0adb9e6216a1..1619cf70ad1cede1a8622dd47158d195f62dc4ae 100644
+--- a/third_party/xsimd/include/xsimd/arch/xsimd_sse4_2.hpp
++++ b/third_party/xsimd/include/xsimd/arch/xsimd_sse4_2.hpp
+@@ -12,10 +12,10 @@
+ #ifndef XSIMD_SSE4_2_HPP
+ #define XSIMD_SSE4_2_HPP
+ 
+-#include <limits>
+-
+ #include "../types/xsimd_sse4_2_register.hpp"
+ 
++#include <limits>
++
+ namespace xsimd
+ {
+ 

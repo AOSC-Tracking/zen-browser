@@ -1,0 +1,17 @@
+diff --git a/third_party/xsimd/include/xsimd/arch/xsimd_constants.hpp b/third_party/xsimd/include/xsimd/arch/xsimd_constants.hpp
+index 916cdf70d45985cefbe907397ae483cb81d66c76..00b719fc9fe418a6be4df5175e1b669f3acc8668 100644
+--- a/third_party/xsimd/include/xsimd/arch/xsimd_constants.hpp
++++ b/third_party/xsimd/include/xsimd/arch/xsimd_constants.hpp
+@@ -12,10 +12,10 @@
+ #ifndef XSIMD_NUMERICAL_CONSTANT_HPP
+ #define XSIMD_NUMERICAL_CONSTANT_HPP
+ 
+-#include <limits>
+-
+ #include "../types/xsimd_utils.hpp"
+ 
++#include <limits>
++
+ namespace xsimd
+ {
+ 

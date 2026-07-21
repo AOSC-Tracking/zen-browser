@@ -1,0 +1,18 @@
+diff --git a/third_party/xsimd/include/xsimd/memory/xsimd_aligned_allocator.hpp b/third_party/xsimd/include/xsimd/memory/xsimd_aligned_allocator.hpp
+index f6f446ac64bd043c9c32a63ab8da908ff820edd4..ee13e1ddacb34bf188b0656d498ee6b0809d850e 100644
+--- a/third_party/xsimd/include/xsimd/memory/xsimd_aligned_allocator.hpp
++++ b/third_party/xsimd/include/xsimd/memory/xsimd_aligned_allocator.hpp
+@@ -21,11 +21,11 @@
+ #include <cstdlib>
+ #endif
+ 
++#include "../config/xsimd_arch.hpp"
++
+ #include <cassert>
+ #include <memory>
+ 
+-#include "../config/xsimd_arch.hpp"
+-
+ namespace xsimd
+ {
+ 

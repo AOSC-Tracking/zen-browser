@@ -1,0 +1,17 @@
+diff --git a/third_party/xsimd/include/xsimd/arch/xsimd_avx512vbmi.hpp b/third_party/xsimd/include/xsimd/arch/xsimd_avx512vbmi.hpp
+index 2975de92c68439628f04a55f1f89cdbe68bc3d87..099adb7e0475c0012288fc01c8459842b747c1eb 100644
+--- a/third_party/xsimd/include/xsimd/arch/xsimd_avx512vbmi.hpp
++++ b/third_party/xsimd/include/xsimd/arch/xsimd_avx512vbmi.hpp
+@@ -12,10 +12,10 @@
+ #ifndef XSIMD_AVX512VBMI_HPP
+ #define XSIMD_AVX512VBMI_HPP
+ 
+-#include <type_traits>
+-
+ #include "../types/xsimd_avx512vbmi_register.hpp"
+ 
++#include <type_traits>
++
+ namespace xsimd
+ {
+ 

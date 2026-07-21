@@ -1,0 +1,24 @@
+diff --git a/third_party/xsimd/include/xsimd/arch/xsimd_emulated.hpp b/third_party/xsimd/include/xsimd/arch/xsimd_emulated.hpp
+index 9eb2e2080b2fa76b23c60fac2b765976e60bfb47..4426c543fd3b4748061d1504fb57e1d61d3b1653 100644
+--- a/third_party/xsimd/include/xsimd/arch/xsimd_emulated.hpp
++++ b/third_party/xsimd/include/xsimd/arch/xsimd_emulated.hpp
+@@ -12,15 +12,14 @@
+ #ifndef XSIMD_EMULATED_HPP
+ #define XSIMD_EMULATED_HPP
+ 
+-#include <complex>
+-#include <numeric>
+-#include <type_traits>
+-
+ #include "../arch/xsimd_scalar.hpp"
+-
+ #include "../types/xsimd_emulated_register.hpp"
+ #include "../types/xsimd_utils.hpp"
+ 
++#include <complex>
++#include <numeric>
++#include <type_traits>
++
+ namespace xsimd
+ {
+     template <typename T, class A, bool... Values>

@@ -1,0 +1,12 @@
+diff --git a/third_party/xsimd/include/xsimd/arch/xsimd_sse3.hpp b/third_party/xsimd/include/xsimd/arch/xsimd_sse3.hpp
+index 3ece0ae3bda41b8b51ab3008fcf0c05337c062f3..a860e4d6177431bf2bd14ab365cd3351886b909f 100644
+--- a/third_party/xsimd/include/xsimd/arch/xsimd_sse3.hpp
++++ b/third_party/xsimd/include/xsimd/arch/xsimd_sse3.hpp
+@@ -13,6 +13,7 @@
+ #define XSIMD_SSE3_HPP
+ 
+ #include "../types/xsimd_sse3_register.hpp"
++
+ #include <type_traits>
+ 
+ namespace xsimd

@@ -1,0 +1,15 @@
+diff --git a/third_party/xsimd/include/xsimd/types/xsimd_wasm_register.hpp b/third_party/xsimd/include/xsimd/types/xsimd_wasm_register.hpp
+index 70b6ff9ad9e79cf230d7d31e92d29b622bf8ca12..5091b76369e79325566871f25a039684c0dc1f01 100644
+--- a/third_party/xsimd/include/xsimd/types/xsimd_wasm_register.hpp
++++ b/third_party/xsimd/include/xsimd/types/xsimd_wasm_register.hpp
+@@ -13,8 +13,8 @@
+ #ifndef XSIMD_WASM_REGISTER_HPP
+ #define XSIMD_WASM_REGISTER_HPP
+ 
+-#include "xsimd_common_arch.hpp"
+-#include "xsimd_register.hpp"
++#include "./xsimd_common_arch.hpp"
++#include "./xsimd_register.hpp"
+ 
+ #if XSIMD_WITH_WASM
+ #include <wasm_simd128.h>

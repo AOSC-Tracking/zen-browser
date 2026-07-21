@@ -1,0 +1,19 @@
+diff --git a/third_party/xsimd/include/xsimd/arch/common/xsimd_common_swizzle.hpp b/third_party/xsimd/include/xsimd/arch/common/xsimd_common_swizzle.hpp
+index 4af2225cd1b6bcd7743fcbe2bd255f2e7d0218a3..326340f9267884212e669c9c88dbb6329d59e9cd 100644
+--- a/third_party/xsimd/include/xsimd/arch/common/xsimd_common_swizzle.hpp
++++ b/third_party/xsimd/include/xsimd/arch/common/xsimd_common_swizzle.hpp
+@@ -12,12 +12,12 @@
+ #ifndef XSIMD_COMMON_SWIZZLE_HPP
+ #define XSIMD_COMMON_SWIZZLE_HPP
+ 
++#include "../../config/xsimd_macros.hpp"
++
+ #include <cstddef>
+ #include <cstdint>
+ #include <type_traits>
+ 
+-#include "../../config/xsimd_inline.hpp"
+-
+ namespace xsimd
+ {
+     template <typename T, class A, T... Values>

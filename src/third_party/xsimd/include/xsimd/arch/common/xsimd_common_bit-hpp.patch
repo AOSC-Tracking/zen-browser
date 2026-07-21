@@ -1,0 +1,24 @@
+diff --git a/third_party/xsimd/include/xsimd/arch/common/xsimd_common_bit.hpp b/third_party/xsimd/include/xsimd/arch/common/xsimd_common_bit.hpp
+index c3ef7d4d9fc47ea03055cd239359cb2a783dbd3f..5cd99c1cfd846e91864b00f60a4696a771e3bc58 100644
+--- a/third_party/xsimd/include/xsimd/arch/common/xsimd_common_bit.hpp
++++ b/third_party/xsimd/include/xsimd/arch/common/xsimd_common_bit.hpp
+@@ -5,6 +5,10 @@
+ #ifndef XSIMD_BIT_HPP
+ #define XSIMD_BIT_HPP
+ 
++#include "../../config/xsimd_config.hpp"
++
++#if XSIMD_CPP_VERSION > 202002L
++
+ #include <version>
+ 
+ #if __cpp_lib_bitops >= 201907L
+@@ -23,6 +27,8 @@ namespace xsimd
+     }
+ }
+ 
++#endif
++
+ #else
+ 
+ #include <climits>

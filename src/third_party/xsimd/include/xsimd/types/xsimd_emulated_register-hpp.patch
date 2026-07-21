@@ -1,0 +1,28 @@
+diff --git a/third_party/xsimd/include/xsimd/types/xsimd_emulated_register.hpp b/third_party/xsimd/include/xsimd/types/xsimd_emulated_register.hpp
+index 306ca0cf4916e8324a833d75e192f190259a8885..6bfc04e94bfd1d53048170f733545935df2f5105 100644
+--- a/third_party/xsimd/include/xsimd/types/xsimd_emulated_register.hpp
++++ b/third_party/xsimd/include/xsimd/types/xsimd_emulated_register.hpp
+@@ -15,6 +15,14 @@
+ #include "./xsimd_common_arch.hpp"
+ #include "./xsimd_register.hpp"
+ 
++#ifdef XSIMD_ENABLE_XTL_COMPLEX
++#include <xtl/xcomplex.hpp>
++#endif
++
++#include <array>
++#include <complex>
++#include <cstddef>
++
+ namespace xsimd
+ {
+     /**
+@@ -70,7 +78,7 @@ namespace xsimd
+         };
+ #ifdef XSIMD_ENABLE_XTL_COMPLEX
+         template <typename T, bool i3ec, size_t N>
+-        struct has_simd_register<xtl::complex<T, T, i3ec>, emulated<N>> : std::true_type
++        struct has_simd_register<xtl::xcomplex<T, T, i3ec>, emulated<N>> : std::true_type
+         {
+         };
+ #endif

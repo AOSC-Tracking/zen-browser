@@ -1,0 +1,13 @@
+diff --git a/toolkit/xre/glxtest/glxtest.cpp b/toolkit/xre/glxtest/glxtest.cpp
+index 4adbcc888b3bc1e075b3e950345a8da54dd5d955..10b7c63a7af602246b622749ba89f8896257e713 100644
+--- a/toolkit/xre/glxtest/glxtest.cpp
++++ b/toolkit/xre/glxtest/glxtest.cpp
+@@ -433,7 +433,7 @@ static bool get_egl_gl_status(EGLDisplay dpy,
+   PFNGLGETSTRING glGetString =
+       cast<PFNGLGETSTRING>(eglGetProcAddress("glGetString"));
+ 
+-#if defined(__arm__) || defined(__aarch64__)
++#if defined(__arm__) || defined(__aarch64__) || (defined(__riscv) && __riscv_xlen == 64)
+   bool useGles = true;
+ #else
+   bool useGles = false;

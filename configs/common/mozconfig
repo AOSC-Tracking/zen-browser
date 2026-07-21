@@ -34,19 +34,6 @@ if test "$SCCACHE_GHA_ENABLED" = "true"; then
   mk_add_options 'export CCACHE_CPP2=yes'
 fi
 
-# add API keys if it exists on a file
-if test -f "$HOME/.zen-keys/safebrowsing.dat"; then
-  ac_add_options --with-google-safebrowsing-api-keyfile="$HOME/.zen-keys/safebrowsing.dat"
-fi
-
-if test -f "$HOME/.zen-keys/mozilla.dat"; then
-  ac_add_options --with-mozilla-api-keyfile="$HOME/.zen-keys/mozilla.dat"
-fi
-
-if test -f "$HOME/.zen-keys/google_location_service.dat"; then
-  ac_add_options --with-google-location-service-api-keyfile="$HOME/.zen-keys/google_location_service.dat"
-fi
-
 if test "$ZEN_RELEASE"; then
 
   ac_add_options --enable-clang-plugin

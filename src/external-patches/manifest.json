@@ -65,5 +65,9 @@
   {
     "type": "local",
     "path": "aosc/0003-Enable-GLES-on-riscv64.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0004-AOSCOS-Fix-unistd.h-header-inclusion-in-libwebrtc.patch"
   }
 ]

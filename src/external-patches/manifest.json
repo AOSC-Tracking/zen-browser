@@ -57,5 +57,9 @@
   {
     "type": "local",
     "path": "aosc/0001-Gate-RVV-code-on-the-target-extension.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0002-AOSCOS-Disable-LASX-by-default-for-libyuv.patch"
   }
 ]

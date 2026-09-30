@@ -61,5 +61,9 @@
   {
     "type": "local",
     "path": "aosc/0002-AOSCOS-Disable-LASX-by-default-for-libyuv.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0003-Enable-GLES-on-riscv64.patch"
   }
 ]

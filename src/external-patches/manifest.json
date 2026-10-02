@@ -73,5 +73,10 @@
   {
     "type": "local",
     "path": "aosc/0005-AOSCOS-Remove-bloated-optional-dependencies-from-mac.patch"
+  },
+  {
+    "type": "phabricator",
+    "id": "D330303",
+    "name": "Bug 2077374"
   }
 ]

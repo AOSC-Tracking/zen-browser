@@ -69,5 +69,9 @@
   {
     "type": "local",
     "path": "aosc/0004-AOSCOS-Fix-unistd.h-header-inclusion-in-libwebrtc.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0005-AOSCOS-Remove-bloated-optional-dependencies-from-mac.patch"
   }
 ]

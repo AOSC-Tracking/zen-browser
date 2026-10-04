@@ -78,5 +78,10 @@
     "type": "phabricator",
     "id": "D330303",
     "name": "Bug 2077374"
+  },
+  {
+    "type": "phabricator",
+    "id": "D330581",
+    "name": "Bug 2077820 RISC-V part"
   }
 ]

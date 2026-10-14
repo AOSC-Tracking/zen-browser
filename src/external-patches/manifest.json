@@ -58,5 +58,37 @@
     "type": "phabricator",
     "id": "D323514",
     "name": "Fix HEVC video stutters and dropped frames"
+  },
+  {
+    "type": "local",
+    "path": "0001-Bug-2077820-riscv64-Use-tail-instead-of-j-for-tail-c.patch"
+  },
+  {
+    "type": "local",
+    "path": "0002-Bug-2077518-Implement-Real-Break-for-RISC-V-and-Loon.patch"
+  },
+  {
+    "type": "local",
+    "path": "0003-Bug-2077374-Add-missing-MOZ_RUNINIT-attributes-to-gl.patch"
+  },
+  {
+    "type": "local",
+    "path": "0004-Gate-RVV-code-on-the-target-extension.patch"
+  },
+  {
+    "type": "local",
+    "path": "0005-AOSCOS-Disable-LASX-by-default-for-libyuv.patch"
+  },
+  {
+    "type": "local",
+    "path": "0006-Enable-GLES-on-riscv64.patch"
+  },
+  {
+    "type": "local",
+    "path": "0007-AOSCOS-Fix-unistd.h-header-inclusion-in-libwebrtc.patch"
+  },
+  {
+    "type": "local",
+    "path": "0008-AOSCOS-Remove-bloated-optional-dependencies-from-mac.patch"
   }
 ]

@@ -1,0 +1,37 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Rong Bao <webmaster@csmantle.top>
+Date: Tue, 6 Oct 2026 17:51:15 +0000
+Subject: [PATCH 2/8] Bug 2077518 - Implement {,Real}Break() for RISC-V and
+ LoongArch. r=nika!
+
+Differential Revision: https://phabricator.services.mozilla.com/D330364
+---
+ xpcom/base/nsDebugImpl.cpp | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/xpcom/base/nsDebugImpl.cpp b/xpcom/base/nsDebugImpl.cpp
+index 4da14b84cd96c8f45ebb0a420d124584b68d0d20..0b522017fa137d6f84ff95327d85de306f4b6f3d 100644
+--- a/xpcom/base/nsDebugImpl.cpp
++++ b/xpcom/base/nsDebugImpl.cpp
+@@ -549,6 +549,10 @@ static void RealBreak() {
+       "BKPT #0");
+ #elif defined(__aarch64__)
+   asm("brk #0");
++#elif defined(__riscv)
++  asm("ebreak");
++#elif defined(__loongarch__)
++  asm("break 0");
+ #elif defined(SOLARIS)
+ #  if defined(__i386__) || defined(__i386) || defined(__x86_64__)
+   asm("int $3");
+@@ -629,6 +633,10 @@ static void Break(const char* aMsg) {
+   RealBreak();
+ #elif defined(__arm__) || defined(__aarch64__)
+   RealBreak();
++#elif defined(__riscv)
++  RealBreak();
++#elif defined(__loongarch__)
++  RealBreak();
+ #elif defined(SOLARIS)
+   RealBreak();
+ #else

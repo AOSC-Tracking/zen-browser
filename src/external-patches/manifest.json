@@ -58,5 +58,49 @@
     "type": "phabricator",
     "id": "D323514",
     "name": "Fix HEVC video stutters and dropped frames"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0001-Bug-2077518-Implement-Real-Break-for-RISC-V-and-Loon.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0002-Bug-2077374-Add-missing-MOZ_RUNINIT-attributes-to-gl.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0003-Bug-2081730-mips64-Part-1-Add-missing-FaultingCodeRa.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0004-Bug-2081730-mips64-Part-2-Wire-up-FaultingCodeRange-.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0005-Bug-2081730-mips64-Part-3-Wire-up-MaybeAddDebugStack.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0006-Gate-RVV-code-on-the-target-extension.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0007-wasm2c-fix-SIMD_FORCE_READ-for-RISC-V-and-PPC64LE.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0008-AOSCOS-Disable-LASX-by-default-for-libyuv.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0009-Enable-GLES-on-riscv64.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0010-AOSCOS-Fix-unistd.h-header-inclusion-in-libwebrtc.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0011-AOSCOS-Remove-bloated-optional-dependencies-from-mac.patch"
   }
 ]

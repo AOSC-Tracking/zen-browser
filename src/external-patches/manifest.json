@@ -67,5 +67,49 @@
       // IMPORTANT: Remember to change the module URI to point to Zen's profile migrator instead of the default Chrome one.
       "ArcProfileMigrator: {\n+    moduleURI:\n+      \"moz-src:///browser/components/migration/ChromeProfileMigrator.sys.mjs\"": "ArcProfileMigrator: {\n+    moduleURI:\n+      \"resource:///modules/zen/ZenProfileMigrators.sys.mjs\""
     }
+  },
+  {
+    "type": "local",
+    "path": "aosc/0001-Bug-2081730-mips64-Part-1-Add-missing-FaultingCodeRa.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0002-Bug-2081730-mips64-Part-2-Wire-up-FaultingCodeRange-.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0003-Bug-2081730-mips64-Part-3-Wire-up-MaybeAddDebugStack.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0004-Bug-2081746-mips64-Implement-lshift32Then-Add-Or-rsh.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0005-Gate-RVV-code-on-the-target-extension.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0006-wasm2c-fix-SIMD_FORCE_READ-for-RISC-V-and-PPC64LE.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0007-AOSCOS-Disable-LASX-by-default-for-libyuv.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0008-Enable-GLES-on-riscv64.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0009-AOSCOS-Fix-unistd.h-header-inclusion-in-libwebrtc.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/0010-AOSCOS-Remove-bloated-optional-dependencies-from-mac.patch"
+  },
+  {
+    "type": "local",
+    "path": "aosc/D340225.patch"
   }
 ]
